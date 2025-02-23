@@ -18,7 +18,7 @@ public class studentController {
             new Student(1, "Rajnish"), new Student(2, "bharath")
     ));
 
-//    Getting CSRF Token: because the third party or some other API not know the csrf-token, we get that using this 
+//    Getting CSRF Token: because the third party or some other API not know the csrf-token, we get that using this
 //    method and adding them in the Headers only the post method works
     @GetMapping("/csrf-token")
     public CsrfToken getCSRFToken(HttpServletRequest request){
